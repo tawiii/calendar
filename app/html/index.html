@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calendar</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+</head>
+<body>
+  <div class="wrap">
+    <header class="header">
+      <div class="header__left-column">
+        <div class="header__btn">Добавить
+          <div class="header__add-modal">
+            <span class="header__cancel icon-cancel"></span>
+            <input class="header__search" type="text" placeholder="5 марта, 14:00, День рождение">
+            <button class="header__create">Создать</button>
+          </div>
+        </div>
+        <p class="header__btn">Обновить</p>
+      </div>
+      <div class="header__right-column">
+        <input class="header__search" type="text" placeholder="Событие, дата или участник">
+      </div>
+    </header>
+    <main class="main">
+      <div class="date-selection">
+        <div class="date-selection__year-month">
+          <span class="date-selection__arrow" data-arr="left"></span>
+          <p class="date-selection__date">Март 2013</p>
+          <span class="date-selection__arrow date-selection__arrow--right" data-arr="right"></span>
+        </div>
+        <p class="date-selection__today-date">Сегодня</p>
+      </div>
+      <div id="calendar"></div>
+    </main>
+  </div>
+
+  <script src="js/index.js"></script>
+</body>
+</html>
